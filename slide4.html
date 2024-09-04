@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Grid Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+        }
+        .slide {
+            background-color: white;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide-header">
+            <h1>A-Grid Solution</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>Blockchain Technology</h2>
+        <ul>
+            <li>Provides 100% traceability and transparency in the food supply chain [3]</li>
+            <li>Enhances trust among stakeholders by ensuring data immutability [3]</li>
+            <li>Aligns with UAE's initiatives like Silal's blockchain-powered food tracing system [11]</li>
+        </ul>
+        
+        <h2>Smart Contracts and Tokenization</h2>
+        <ul>
+            <li>Automate supply chain processes, reducing costs and improving efficiency [1]</li>
+            <li>Enable secure and transparent transactions between farmers, distributors, and consumers [1]</li>
+            <li>Facilitate real-time tracking and verification of organic certifications [3]</li>
+        </ul>
+        
+        <h2>Supply Chain Traceability</h2>
+        <div class="chart-container">
+            <svg viewBox="0 0 500 200">
+                <text x="250" y="20" text-anchor="middle" font-size="16" fill="#333">A-Grid Blockchain-Enabled Supply Chain</text>
+                
+                <!-- Farm -->
+                <circle cx="50" cy="100" r="30" fill="#4CAF50"/>
+                <text x="50" y="105" text-anchor="middle" font-size="12" fill="white">Farm</text>
+                
+                <!-- Processing -->
+                <circle cx="190" cy="100" r="30" fill="#4CAF50"/>
+                <text x="190" y="105" text-anchor="middle" font-size="12" fill="white">Processing</text>
+                
+                <!-- Distribution -->
+                <circle cx="330" cy="100" r="30" fill="#4CAF50"/>
+                <text x="330" y="105" text-anchor="middle" font-size="12" fill="white">Distribution</text>
+                
+                <!-- Retail -->
+                <circle cx="470" cy="100" r="30" fill="#4CAF50"/>
+                <text x="470" y="105" text-anchor="middle" font-size="12" fill="white">Retail</text>
+                
+                <!-- Connecting lines -->
+                <line x1="80" y1="100" x2="160" y2="100" stroke="#333" stroke-width="2"/>
+                <line x1="220" y1="100" x2="300" y2="100" stroke="#333" stroke-width="2"/>
+                <line x1="360" y1="100" x2="440" y2="100" stroke="#333" stroke-width="2"/>
+                
+                <!-- Blockchain representation -->
+                <rect x="25" y="150" width="450" height="20" fill="#4CAF50" opacity="0.3"/>
+                <text x="250" y="185" text-anchor="middle" font-size="14" fill="#333">Blockchain Ledger</text>
+            </svg>
+        </div>
+        
+        <h2>Key Benefits</h2>
+        <ul>
+            <li>End-to-end visibility of the agricultural supply chain [3]</li>
+            <li>Improved food safety through real-time tracking and rapid issue identification [11]</li>
+            <li>Enhanced consumer trust through transparent product information [1]</li>
+            <li>Efficient verification of organic and sustainable farming practices [3]</li>
+        </ul>
+    </div>
+</body>
+</html>

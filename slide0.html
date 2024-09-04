@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Grid Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .slide {
+            background-color: white;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 800px;
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+        .chart-container, .tech-stack, .venn-diagram, .business-model, .go-to-market, .financial-chart {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .founders {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .founder {
+            text-align: center;
+            max-width: 45%;
+        }
+        .founder-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            margin: 0 auto 20px;
+        }
+        .cta-box {
+            background-color: #E8F5E9;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+        .nav-button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        .cover {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .cover h1 {
+            font-size: 48px;
+            border-bottom: none;
+        }
+        .cover .logo {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Slide -->
+    <div class="slide active" id="slide0">
+        <div class="cover">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+            <h1>A-Grid</h1>
+            <h2>Revolutionizing Agriculture with Blockchain</h2>
+            <p>Investor Presentation</p>
+        </div>
+    </div>
+
+    <!-- Slide 1: Introduction to A-Grid -->
+    <div class="slide" id="slide1">
+        <div class="slide-header">
+            <h1>Introduction to A-Grid</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>Company Overview</h2>
+        <ul>
+            <li>A-Grid: Innovative agtech company leveraging blockchain technology to enhance transparency and efficiency in the UAE's agricultural supply chain.</li>
+            <li>Mission: To connect 35,000 farms in the UAE directly with consumers, ensuring sustainable and organic food production.</li>
+        </ul>
+        
+        <h2>UAE Agritech Market</h2>
+        <ul>
+            <li>The UAE's agritech market is experiencing significant growth [6]:</li>
+            <ul>
+                <li>2023: Valued at USD 3.17 billion</li>
+                <li>2029: Projected to reach USD 4.09 billion</li>
+                <li>Compound Annual Growth Rate (CAGR): 4.35% during the forecast period (2024-2029)</li>
+            </ul>
+        </ul>
+        
+        <h2>Driving Factors</h2>
+        <ul>
+            <li>Government initiatives supporting agritech adoption [6]</li>
+            <li>Increasing focus on food security and reducing import dependency [9]</li>
+            <li>Growing demand for locally produced food [9]</li>
+            <li>Harsh climate conditions driving innovation in agriculture [6]</li>
+        </ul>
+    </div>
+
+    <!-- Slide 2: Market Opportunity -->
+    <div class="slide" id="slide2">
+        <div class="slide-header">
+            <h1>Market Opportunity</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>UAE Agriculture Landscape</h2>
+        <ul>
+            <li>UAE is prioritizing food security and reducing import dependency [6][11]</li>
+            <li>Significant investments and government initiatives support the agricultural sector [6]</li>
+            <li>Focus on sustainable and technology-driven farming practices [11]</li>
+        </ul>
+        
+        <h2>Market Growth</h2>
+        <ul>
+            <li>The blockchain market in agriculture is projected to reach USD 2760.85 million by 2032 [10]</li>
+            <li>Driven by increasing demand for transparency and traceability in the food supply chain [10]</li>
+        </ul>
+        
+        <div class="chart-container">
+            <svg viewBox="0 0 500 300">
+                <text x="250" y="30" text-anchor="middle" font-size="16" fill="#333">Projected Growth of Blockchain in Agriculture</text>
+                <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2"/>
+                <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2"/>
+                <path d="M50 210 L450 50" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <circle cx="50" cy="210" r="5" fill="#4CAF50"/>
+                <circle cx="450" cy="50" r="5" fill="#4CAF50"/>
+                <text x="50" y="270" text-anchor="middle" font-size="12" fill="#333">2022</text>
+                <text x="450" y="270" text-anchor="middle" font-size="12" fill="#333">2032</text>
+                <text x="30" y="215" text-anchor="end" font-size="12" fill="#333">$0B</text>
+                <text x="30" y="55" text-anchor="end" font-size="12" fill="#333">$2.76B</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Slide 3: Problem Statement -->
+    <div class="slide" id="slide3">
+        <div class="slide-header">
+            <h1>Problem Statement</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>Current Challenges</h2>
+        <ul>
+            <li>Lack of transparency in the agricultural supply chain</li>
+            <li>Inefficiencies in tracking and verifying the origin and quality of produce</li>
+            <li>Food safety concerns due to limited traceability</li>
+            <li>Difficulty in verifying sustainable and organic farming practices</li>
+        </ul>
+        
+        <h2>Consumer Demand</h2>
+        <ul>
+            <li>Increasing demand for organic, local, and sustainable food products [5]</li>
+            <li>Growing concern for food safety and quality</li>
+            <li>Desire for transparency in food sourcing and production methods</li>
+        </ul>
+        
+        <h2>UAE Organic Food Market Growth [5]</h2>
+        <p>The UAE organic food market is projected to experience significant growth:</p>
+        <div class="chart-container">
+            <svg viewBox="0 0 500 300">
+                <text x="250" y="30" text-anchor="middle" font-size="16" fill="#333">UAE Organic Food Market Growth</text>
+                <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2"/>
+                <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2"/>
+                <path d="M50 210 L450 150" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <circle cx="50" cy="210" r="5" fill="#4CAF50"/>
+                <circle cx="450" cy="150" r="5" fill="#4CAF50"/>
+                <text x="50" y="270" text-anchor="middle" font-size="12" fill="#333">2023</text>
+                <text x="450" y="270" text-anchor="middle" font-size="12" fill="#333">2029</text>
+                <text x="30" y="215" text-anchor="end" font-size="12" fill="#333">$42.57M</text>
+                <text x="30" y="155" text-anchor="end" font-size="12" fill="#333">$55.63M</text>
+            </svg>
+        </div>
+        <p>Projected growth from USD 42.57 million in 2023 to USD 55.63 million by 2029</p>
+    </div>
+
+    <!-- Slide 4: A-Grid Solution -->
+    <div class="slide" id="slide4">
+        <div class="slide-header">
+            <h1>A-Grid Solution</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial

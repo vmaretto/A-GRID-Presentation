@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Grid Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+        }
+        .slide {
+            background-color: white;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+        .chart {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide-header">
+            <h1>Market Opportunity</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="190" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>UAE Agriculture Landscape</h2>
+        <ul>
+            <li>UAE is prioritizing food security and reducing import dependency [6][11]</li>
+            <li>Significant investments and government initiatives support the agricultural sector [6]</li>
+            <li>Focus on sustainable and technology-driven farming practices [11]</li>
+        </ul>
+        
+        <h2>Market Growth</h2>
+        <ul>
+            <li>The blockchain market in agriculture is projected to reach USD 2760.85 million by 2032 [10]</li>
+            <li>Driven by increasing demand for transparency and traceability in the food supply chain [10]</li>
+        </ul>
+        
+        <div class="chart">
+            <svg viewBox="0 0 500 300">
+                <text x="250" y="30" text-anchor="middle" font-size="16" fill="#333">Projected Growth of Blockchain in Agriculture</text>
+                <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2"/>
+                <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2"/>
+                <path d="M50 250 L250 150 L450 50" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <circle cx="50" cy="250" r="5" fill="#4CAF50"/>
+                <circle cx="250" cy="150" r="5" fill="#4CAF50"/>
+                <circle cx="450" cy="50" r="5" fill="#4CAF50"/>
+                <text x="50" y="270" text-anchor="middle" font-size="12" fill="#333">2022</text>
+                <text x="250" y="270" text-anchor="middle" font-size="12" fill="#333">2027</text>
+                <text x="450" y="270" text-anchor="middle" font-size="12" fill="#333">2032</text>
+                <text x="30" y="255" text-anchor="end" font-size="12" fill="#333">0</text>
+                <text x="30" y="155" text-anchor="end" font-size="12" fill="#333">1380M</text>
+                <text x="30" y="55" text-anchor="end" font-size="12" fill="#333">2760M</text>
+            </svg>
+        </div>
+        
+        <h2>Market Comparison</h2>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Traditional Agriculture</th>
+                <th>Blockchain-Enabled Agriculture</th>
+            </tr>
+            <tr>
+                <td>Traceability</td>
+                <td>Limited</td>
+                <td>End-to-end visibility</td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td>Manual processes</td>
+                <td>Automated smart contracts</td>
+            </tr>
+            <tr>
+                <td>Trust</td>
+                <td>Centralized</td>
+                <td>Decentralized and transparent</td>
+            </tr>
+            <tr>
+                <td>Data Management</td>
+                <td>Siloed</td>
+                <td>Shared and secure</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

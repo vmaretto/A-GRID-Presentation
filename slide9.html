@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Grid Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+        }
+        .slide {
+            background-color: white;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+        .financial-chart {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide-header">
+            <h1>Financial Projections</h1>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" fill="#4CAF50" />
+                <path d="M30 100 H170 M100 30 V170" stroke="white" stroke-width="5" />
+                <path d="M70 150 L100 70 L130 150 M80 130 H120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                <text x="100" y="180" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">A-GRID</text>
+            </svg>
+        </div>
+        
+        <h2>Revenue Growth Projections [9]</h2>
+        <div class="financial-chart">
+            <svg viewBox="0 0 400 200">
+                <text x="200" y="20" text-anchor="middle" font-size="16" fill="#333">Projected Revenue Growth</text>
+                
+                <!-- Y-axis -->
+                <line x1="50" y1="180" x2="50" y2="40" stroke="#333" stroke-width="2"/>
+                <text x="45" y="185" text-anchor="end" font-size="12" fill="#333">0</text>
+                <text x="45" y="110" text-anchor="end" font-size="12" fill="#333">50M</text>
+                <text x="45" y="35" text-anchor="end" font-size="12" fill="#333">100M</text>
+                
+                <!-- X-axis -->
+                <line x1="50" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+                <text x="50" y="195" text-anchor="middle" font-size="12" fill="#333">Year 1</text>
+                <text x="160" y="195" text-anchor="middle" font-size="12" fill="#333">Year 3</text>
+                <text x="270" y="195" text-anchor="middle" font-size="12" fill="#333">Year 5</text>
+                <text x="380" y="195" text-anchor="middle" font-size="12" fill="#333">Year 7</text>
+                
+                <!-- Revenue line -->
+                <path d="M50 170 Q160 130 270 80 T380 30" fill="none" stroke="#4CAF50" stroke-width="3"/>
+                
+                <!-- Data points -->
+                <circle cx="50" cy="170" r="4" fill="#4CAF50"/>
+                <circle cx="160" cy="130" r="4" fill="#4CAF50"/>
+                <circle cx="270" cy="80" r="4" fill="#4CAF50"/>
+                <circle cx="380" cy="30" r="4" fill="#4CAF50"/>
+            </svg>
+        </div>
+        
+        <h2>Key Financial Metrics [8][9]</h2>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Year 1</th>
+                <th>Year 3</th>
+                <th>Year 5</th>
+            </tr>
+            <tr>
+                <td>Revenue</td>
+                <td>$2M</td>
+                <td>$25M</td>
+                <td>$75M</td>
+            </tr>
+            <tr>
+                <td>EBITDA Margin</td>
+                <td>-20%</td>
+                <td>15%</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Customer Acquisition Cost</td>
+                <td>$10,000</td>
+                <td>$7,500</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>Lifetime Value (LTV)</td>
+                <td>$30,000</td>
+                <td>$50,000</td>
+                <td>$80,000</td>
+            </tr>
+        </table>
+        
+        <h2>Investment Needs [8]</h2>
+        <ul>
+            <li><strong>Total Funding Required:</strong> $20 million over the next 3 years</li>
+            <li><strong>Use of Funds:</strong>
+                <ul>
+                    <li>R&D and Technology Development: 40%</li>
+                    <li>Market Expansion and Customer Acquisition: 30%</li>
+                    <li>Operations and Team Growth: 20%</li>
+                    <li>Working Capital: 10%</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Key Drivers of Growth [9]</h2>
+        <ul>
+            <li>Increasing adoption of blockchain technology in agriculture</li>
+            <li>Growing demand for food traceability and sustainability</li>
+            <li>Expansion into new geographic markets</li>
+            <li>Introduction of new value-added services</li>
+        </ul>
+        
+        <h2>Path to Profitability [8]</h2>
+        <ul>
+            <li>Achieve break-even by end of Year 3</li>
+            <li>Positive cash flow expected from Year 4 onwards</li>
+            <li>Projected to reach $100M annual recurring revenue by Year 7</li>
+        </ul>
+    </div>
+</body>
+</html>
